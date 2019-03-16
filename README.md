@@ -1,8 +1,6 @@
-# bot-lugus
+# Project base NestJS and Postgresql
 
-## Description
 
-API Botnet para multiples dispositivos
 
 ## Installation
 
