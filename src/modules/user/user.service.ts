@@ -19,8 +19,8 @@ export class UserService {
   } */
 
   async  getUsers(){
-   const query = await  this.connection.query('SELECT * FROM users');
-   return await query.rows[0]
+   const query = await  this.connection.query('SELECT ST_AsGeoJSON(point) AS geojson FROM geoprogram_schema.location');
+   return await query.rows
   }
 
   public findUser(idUser : number){
